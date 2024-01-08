@@ -97,7 +97,7 @@ class Contacts {
 
         if (typeof storageData == 'string') localStorage.setItem('data', storageData);
 
-        document.cookie = 'data=' + storageData + '; max-age=864000';
+        document.cookie = 'storageExpiration=' + new Date() + '; max-age=864000';
 
     }
 
